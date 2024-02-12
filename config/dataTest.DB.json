@@ -1,0 +1,119 @@
+{
+  "USERS": [
+    {
+      "_id": { "$oid": "65ca63f0c55ab145cd813229" },
+      "fullName": "John Doe",
+      "id_TokenPay": "",
+      "nickname": "johndoe123",
+      "phoneNumber": "555-123-4567",
+      "prefixNumber": "+1",
+      "email": "john.doe@example.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca65f8c55ab145cd81322a" },
+      "fullName": "Jane Smith",
+      "id_TokenPay": "",
+      "nickname": "janesmith",
+      "phoneNumber": "555-987-6543",
+      "prefixNumber": "+1",
+      "email": "jane.smith@example.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca660ac55ab145cd81322b" },
+      "fullName": "Alex Johnson",
+      "id_TokenPay": "",
+      "nickname": "alexjohn",
+      "phoneNumber": "555-567-8901",
+      "prefixNumber": "+1",
+      "email": "alex.johnson@example.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca6616c55ab145cd81322c" },
+      "fullName": "Emily Taylor",
+      "id_TokenPay": "",
+      "nickname": "emilyt",
+      "phoneNumber": "555-234-5678",
+      "prefixNumber": "+1",
+      "email": "emily.taylor@example.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca6627c55ab145cd81322d" },
+      "fullName": "Michael Williams",
+      "id_TokenPay": "",
+      "nickname": "micwill",
+      "phoneNumber": "555-876-5432",
+      "prefixNumber": "+1",
+      "email": "michael.williams@example.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca663ac55ab145cd81322e" },
+      "fullName": "Jonny Alejandro Cano Acosta",
+      "id_TokenPay": "",
+      "nickname": "conductor",
+      "phoneNumber": "3015018468",
+      "prefixNumber": "+57",
+      "email": "jonnyalejandro.ca0910@conductor.com",
+      "role": { "$numberInt": "1" },
+      "active": "true"
+    },
+    {
+      "_id": { "$oid": "65ca66aac55ab145cd81322f" },
+      "fullName": "Jonny Alejandro Cano Acosta",
+      "id_TokenPay": "",
+      "nickname": "Pasajero",
+      "phoneNumber": "3015018468",
+      "prefixNumber": "+57",
+      "email": "jonnyalejandro.ca0910@pasajero.com",
+      "role": { "$numberInt": "2" },
+      "active": "true"
+    }
+  ],
+  "CARS": [
+    {
+      "id_user": "65ca63f0c55ab145cd813229",
+      "plate": "QEU123",
+      "color": "Red"
+    },
+    {
+      "id_user": "65ca65f8c55ab145cd81322a",
+      "plate": "YUJ978",
+      "color": "Black"
+    },
+    {
+      "id_user": "65ca660ac55ab145cd81322b",
+      "plate": "JHK057",
+      "color": "Blue"
+    },
+    {
+      "id_user": "65ca6616c55ab145cd81322c",
+      "plate": "UKD978",
+      "color": "Yellow"
+    },
+    {
+      "id_user": "65ca6627c55ab145cd81322d",
+      "plate": "KHJ256",
+      "color": "White"
+    },
+    {
+      "id_user": "65ca663ac55ab145cd81322e",
+      "plate": "JFG098",
+      "color": "Grey"
+    }
+  ],
+  "TOKENS": [
+    {
+      "PASAJERO": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjZhYWM1NWFiMTQ1Y2Q4MTMyMmYifQ.NHSh3BrZMf3gpblD6-FmmPpnnUq-cDKCkRr_BHt5HwI",
+      "CONDUCTOR": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjYzYWM1NWFiMTQ1Y2Q4MTMyMmUifQ.Vqv7MKttnFkXci5MKDexw0v9qCL0GVmM9594TGQBmCQ"
+    }
+  ]
+}

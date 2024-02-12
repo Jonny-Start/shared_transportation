@@ -1,0 +1,69 @@
+Primer ENDPOINT: Solicitar Viaje
+
+    let headersList = {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjZhYWM1NWFiMTQ1Y2Q4MTMyMmYifQ.NHSh3BrZMf3gpblD6-FmmPpnnUq-cDKCkRr_BHt5HwI"
+    }
+    let response = await fetch("http://localhost:4000/api/v1/travel_request/40.7128/-74.0060/Visa", { 
+    method: "POST",
+    headers: headersList
+    });
+
+    Retorno esperado:
+    {
+        "id_user_driver": "65ca6616c55ab145cd81322c",
+        "id_travel": "65ca798639603c058347ac9a",
+        "driver_name": "Emily Taylor",
+        "car_plate": "UKD978",
+        "car_color": "Yellow"
+    }
+
+Segundo ENDPOINT: iniciar Viaje
+
+    let headersList = {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjZhYWM1NWFiMTQ1Y2Q4MTMyMmYifQ.NHSh3BrZMf3gpblD6-FmmPpnnUq-cDKCkRr_BHt5HwI"
+    }
+
+    let response = await fetch("http://localhost:4000/api/v1/initTravel/65ca798639603c058347ac9a", { 
+    method: "POST",
+    headers: headersList
+    });
+
+    Retorno esperado:
+
+    {
+    "message": "Succes: Viaje iniciado"
+    }
+
+Tercer ENDPOINT: Finalizar Viaje
+
+    let headersList = {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjYzYWM1NWFiMTQ1Y2Q4MTMyMmUifQ.Vqv7MKttnFkXci5MKDexw0v9qCL0GVmM9594TGQBmCQ"
+    }
+
+    let response = await fetch("http://localhost:4000/api/v1/end_trip/65ca798639603c058347ac9a/120", { 
+    method: "POST",
+    headers: headersList
+    });
+
+    Retorno esperado:
+
+    {
+    "message": "Succes: Viaje finalizado",
+    "Total_price": 130500
+    }
+
+Cuarto ENDPOINT: Pagar
+    let headersList = {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNhNjYzYWM1NWFiMTQ1Y2Q4MTMyMmUifQ.Vqv7MKttnFkXci5MKDexw0v9qCL0GVmM9594TGQBmCQ"
+    }
+
+    let response = await fetch("http://localhost:4000/api/v1/pay_fare/65ca798639603c058347ac9a", { 
+    method: "POST",
+    headers: headersList
+    });
+
+    Retorno esperado:
+    {
+    message: "Succes: pago realizado con exito",
+    data: data,
+    }
