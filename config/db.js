@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 //Conexión a base de datos
-const DB_USER = process.env.DB_USER || "root";
-const DB_PASSWORD = process.env.DB_PASSWORD || "";
-const DB_DATABASE = process.env.DB_DATABASE || "shared_transportation";
+const DB_USER = process.env.DB_USER || "developer";
+const DB_PASSWORD = process.env.DB_PASSWORD || "kohXpGCW1OLUAcHX";
+const DB_DATABASE = process.env.DB_DATABASE || "shared-transportation";
 
 // const DB_URI = `mongodb://localhost:3306/Shared_Transportation`;
 const DB_URI = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@shared-transportation-d.atonmbq.mongodb.net/${DB_DATABASE}?retryWrites=true&w=majority`;
